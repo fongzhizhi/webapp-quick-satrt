@@ -1,0 +1,5 @@
+# Ignore assets files
+src/assets
+node_modules
+dist
+*.png

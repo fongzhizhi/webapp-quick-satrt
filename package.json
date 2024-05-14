@@ -7,14 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "prettier": "prettier --write",
+    "prettier": "prettier src -write --ignore-unknown",
     "build": "vite build",
     "server": "node app.router.js",
     "vite": "vite --open",
     "dev": "npm-run-all -p server vite"
   },
   "lint-staged": {
-    "src/**/*": "prettier --write"
+    "src": "prettier --write --ignore-unknown" 
   },
   "repository": {
     "type": "git",
